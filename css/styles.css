@@ -1158,9 +1158,6 @@ margin-bottom: 4px;
 }
 /* .label-group:focus-visible { */
  
-.input-fied {
-  
-}
 
 .textarea-field {
   outline: none;
@@ -1176,6 +1173,12 @@ margin-bottom: 4px;
 
 }
 .commit-textarea {
+  font-weight: 400;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+color: var(--primary-text-color);
+
   margin-bottom: 20px;
 }
 .textarea-field:focus {
