@@ -122,8 +122,12 @@ img {
   line-height: 1.19;
 
   margin-right: 93px;
-  transition: 250ms var(--time-distribution);
 }
+
+.logo span {
+  transition: color 250ms var(--time-distribution);
+}
+
 .logo:hover span,
 .logo:focus span {
   color: var(--accent-color);
@@ -161,8 +165,12 @@ img {
   line-height: 1.14;
 
   letter-spacing: 0.02em;
-  transition: 250ms var(--time-distribution);
+  transition: color 250ms var(--time-distribution);
   color: var(--title-text-color);
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
 }
 .current::after {
   content: '';
@@ -179,10 +187,7 @@ img {
 /* .header-link.current::after {
   color: var(--accent-color);
 } */
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
-}
+
 .current {
   opacity: 1;
   color: var(--accent-color);
@@ -332,7 +337,7 @@ a {
   
   margin: auto;
   min-width: 200px;
-  transition: opacity 250ms var(--time-distribution); 
+  transition: background 250ms var(--time-distribution); 
 
 }
 
@@ -530,7 +535,7 @@ a {
   background-color: var(--white-color);
   fill: var(--icon-fill);
   outline: none;
-  transition: 250ms var(--time-distribution);
+  transition:background-color 250ms var(--time-distribution), fill 250ms var(--time-distribution);
 }
 .network-link:hover,
 .network-link:focus {
@@ -630,7 +635,7 @@ a {
   border-radius: 4px;
   outline: none;
 
-  transition: 250ms var(--time-distribution);
+  transition:border 250ms var(--time-distribution),  fill 250ms var(--time-distribution);
 }
 /* ---------------------------------------------------------------ХОВЕР И ФОКУС ИКОНОК КЛИЕНТОВ------------------------------------------------ */
 .client-item-link:hover,
@@ -677,7 +682,7 @@ a {
 
   justify-content: center;
 
-  transition: 250ms var(--time-distribution);
+  transition: background 250ms var(--time-distribution), color 250ms var(--time-distribution) ;
 }
 .marketing {
   margin: 0;
@@ -766,7 +771,7 @@ a {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  transition: 250ms var(--time-distribution);
+  transition:color 250ms var(--time-distribution);
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -827,30 +832,29 @@ a {
   color: var(--footer-contacts-color);
   margin-bottom: 9px;
 
-  transition: 250ms var(--time-distribution);
+  transition: color 250ms var(--time-distribution);
 }
 .mailto-footer:hover,
 .mailto-footer:focus {
   color: var(--accent-color);
 }
+.tel-footer {
+  color: var(--footer-contacts-color);
+  text-decoration: none;
 
+  transition:color 250ms var(--time-distribution);
+}
 .tel-footer:hover,
 .tel-footer:focus {
   color: var(--accent-color);
 }
 
-.tel-footer {
-  color: var(--footer-contacts-color);
-  text-decoration: none;
-
-  transition: 250ms var(--time-distribution);
-}
 
 .maps {
   color: var(--white-color);
   margin-bottom: 9px;
 
-  transition: 250ms var(--time-distribution);
+  transition: color 250ms var(--time-distribution);
 }
 .maps:hover,
 .maps:focus {
@@ -1004,12 +1008,12 @@ background-color: transparent;
 .flex-elementb:focus .description-projects {
  
   transform: translateY(0);
-  transition: transform 250ms var(--time-distribution);  
+ 
 }
 
 .flex-element:hover,
 .flex-elementb:focus {
-  transition: transform 250ms var(--time-distribution); 
+  /* transition: transform 250ms var(--time-distribution);  */
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -1048,8 +1052,7 @@ background-color: transparent;
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  /* webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);  */
-  /* transition: opasity 250ms var(--time-distribution);  */
+
 }
 .modal-header {
   position: relative;
@@ -1131,12 +1134,12 @@ margin-bottom: 4px;
   transition: border 250ms var(--time-distribution);
 
 }
-.input-wrapper > .icon-field {
+.label-group .icon-field {
   position: absolute;
   left: 15px;
   top:50%;
   transform: translateY(-50%);
-  transition: transform 250ms var(--time-distribution);
+  transition: fill 250ms var(--time-distribution);
 
 }
 .label-group:focus-within .icon-field {
