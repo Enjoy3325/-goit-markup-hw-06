@@ -1112,6 +1112,7 @@ color: var(--title-text-color);
 .label-group {
   display: block;
   margin-bottom: 4px;
+  cursor: pointer;
   
   
 }
@@ -1132,6 +1133,7 @@ margin-bottom: 4px;
   margin-bottom: 10px;
   outline: none; 
   transition: border 250ms var(--time-distribution);
+  cursor: pointer;
 
 }
 .label-group .icon-field {
@@ -1157,10 +1159,20 @@ margin-bottom: 4px;
  
   color: var(--primary-text-color);
   text-align: left;
+  cursor: pointer;
 
 }
 /* .label-group:focus-visible { */
- 
+  .commit-textarea {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--primary-text-color);
+    
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
 
 .textarea-field {
   outline: none;
@@ -1173,17 +1185,10 @@ margin-bottom: 4px;
   
   border: 1px solid rgba(33,33,33,.2);
   transition: border 250ms var(--time-distribution);
+  cursor: pointer;
 
 }
-.commit-textarea {
-  font-weight: 400;
-font-size: 12px;
-line-height: 1.16;
-letter-spacing: 0.01em;
-color: var(--primary-text-color);
 
-  margin-bottom: 20px;
-}
 .textarea-field:focus {
   border: 1px solid var(--accent-color);
 }
