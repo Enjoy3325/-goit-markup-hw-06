@@ -1060,7 +1060,7 @@ background-color: transparent;
 font-size: 20px;
 line-height: 1.15;
 text-align: center;
-margin-bottom: 30px;
+margin-bottom: 12px;
 color: var(--title-text-color);
  }
 
@@ -1068,7 +1068,7 @@ color: var(--title-text-color);
   display: block;
  position: absolute; 
   width: 528px;
-  
+  height: 581px;
   top: 50%;
   left: 50%;
     padding: 40px 39px 40px 41px;
@@ -1105,7 +1105,6 @@ color: var(--title-text-color);
 .signap-form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 31px;
   position: relative;
 }
 
@@ -1170,7 +1169,7 @@ margin-bottom: 4px;
     letter-spacing: 0.01em;
     color: var(--primary-text-color);
     
-    margin-bottom: 20px;
+    margin-bottom: 4px;
     cursor: pointer;
   }
 
