@@ -11,6 +11,12 @@
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
   }
-
+  function handleCloseModal(e) { 
+    if(e.key === "Escape") {
+      refs.modal.classList.add('is-hidden');
+    }
+  }
+  
+  window.addEventListener('keydown', handleCloseModal);
 })();
 
